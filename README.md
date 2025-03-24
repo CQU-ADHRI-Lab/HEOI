@@ -1,4 +1,8 @@
-<h2 align="center"> [HEOI: Human Attention Preiction in Natural Daily Life with Fine-Grained Human-Environment-Object Interaction Model](https://ieeexplore.ieee.org/abstract/document/10794598)</a></h2>
+<h2 align="center">
+  <a href="https://ieeexplore.ieee.org/abstract/document/10794598">
+    HEOI: Human Attention Prediction in Natural Daily Life with Fine-Grained Human-Environment-Object Interaction Model
+  </a>
+</h2>
 <h4 align="center" color="A0A0A0"> Zhixiong Nan, Leiyu Jia, Bin Xiao </h4>
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h5>
 
