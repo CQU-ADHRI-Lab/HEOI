@@ -36,65 +36,25 @@ pip install torch==1.13.0+cu114 torchvision==0.14.0+cu114 --extra-index-url http
 
 # Under your working directory
 git clone https://github.com/CQU-ADHRI-Lab/HEOI.git
-cd MI-DETR/
+cd HEOI/
 pip install -r requirements.txt
-
-# build an editable version of detrex
-pip install -e .
 ```
-
-## Models
-
-<table style="width: 100%; border-collapse: collapse;"  id="model-table">
-    <tr style="border: 1px solid black; background-color: #f2f2f2; text-align: center; padding: 8px;">
-        <th align="center">Name</th>
-        <th align="center">Backbone</th>
-        <th align="center">Epochs</th>
-        <th align="center"><i>AP</i></th>
-        <th align="center">Download</th>
-    </tr>
-    <tr align="center">
-        <td align="center"><a href="./projects/midetr/configs/midetr-resnet/midetr_r50_4scale_12ep.py" style="text-decoration: none; color: black;">MI-DETR</a></td>
-        <td align="center">ResNet50</td>
-        <td align="center">12</td>
-        <td align="center">50.2</td>
-        <td align="center"><a href="https://drive.google.com/file/d/1ONmGGOWcj4uzFjfrAQ9_H9ge8UhpdVxw/view?usp=drive_link" style="text-decoration: none; color: blue;">model</a></td>
-    </tr>
-    <tr align="center">
-        <td align="center"><a href="./projects/midetr/configs/midetr-resnet/midetr_r50_4scale_24ep.py" style="text-decoration: none; color: black;">MI-DETR</a></td>
-        <td align="center">ResNet50</td>
-        <td align="center">24</td>
-        <td align="center">51.2</td>
-        <td align="center"><a href="https://drive.google.com/file/d/1FO1ht5N44clB1_65w5WQoUqB1COoM-lJ/view?usp=drive_link" style="text-decoration: none; color: blue;">model</a></td>
-    </tr>
-    <tr align="center">
-        <td align="center"><a href="./projects/midetr/configs/midetr-swin/midetr_swin_large_384_4scale_12ep.py" style="text-decoration: none; color: black;">MI-DETR</a></td>
-        <td align="center">Swin-Large-384</td>
-        <td align="center">12</td>
-        <td align="center">57.5</td>
-        <td align="center"><a href="https://drive.google.com/file/d/1pCEOIIJ_jrQPWDxdWV8pxV-ODATFlKol/view?usp=drive_link" style="text-decoration: none; color: blue;">model</a></td>
-    </tr>
-</table>
 
 ## Run
 
 ### Training
 
-Train MI-DETR with 8 GPUs:
+Train HEOI with 2 GPUs:
 
 ```sh
-python tools/train_net.py --config-file projects/midetr/configs/midetr-resnet/midetr_r50_4scale_12ep.py --num-gpus 8 --resume
+CUDA_VISIBLE_DEVICES=0,1 python train.py --name CAD_DenseFusion_V2_1_3_8_B_200_LR0001 --model_name Dense_V1 --network_name Dense_fusion_2_1_3_8 --batch_size 200 --lr_G 0.0001 --nepochs_decay 5 --nepochs_no_decay 5
 ```
 
 ### Evaluation
 
 You can download our pretrained models and evaluate them with the following commands. 
 ```sh
-python tools/train_net.py --config-file /path/to/config_file --num-gpus 8 --eval-only train.init_checkpoint=/path/to/model_checkpoint
-```
-For example, to reproduce our result, you can copy the config path from the model table, download the pretrained checkpoint into `/path/to/checkpoint_file`, and run 
-```sh
-python tools/train_net.py --config-file projects/midetr/configs/midetr-resnet/midetr_r50_4scale_12ep.py --num-gpus 8 --eval-only train.init_checkpoint=/path/to/model_checkpoint
+CUDA_VISIBLE_DEVICES=0,1 python test_CAD_netpart.py --name CAD_DenseFusion_V2_1_3_1_B_200_LR0001 --model_name Dense_V1 --network_name Dense_fusion_2_1_3_1 --batch_size 200 --lr_G 0.0001 --nepochs_decay 5 --nepochs_no_decay 5
 ```
 
 
