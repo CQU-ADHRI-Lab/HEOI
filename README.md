@@ -3,7 +3,7 @@
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h5>
 
 # HEOI
-This is the official implementation of the paper "<a href="[https://ieeexplore.ieee.org/abstract/document/10794598]">HEOI: Human Attention Prediction in Natural Daily Life with Fine-Grained Human-Environment-Object Interaction Model".
+This is the official implementation of the paper "[HEOI: Human Attention Preiction in Natural Daily Life with Fine-Grained Human-Environment-Object Interaction Model](https://ieeexplore.ieee.org/abstract/document/10794598)".
 
 <div align="center">
   <img src="figures/framework.png"/>
