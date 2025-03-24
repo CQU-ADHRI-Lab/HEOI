@@ -2,20 +2,6 @@
 <h4 align="center" color="A0A0A0"> Zhixiong Nan, Leiyu Jia, Bin Xiao </h4>
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h5>
 
-<div align="center">
-
-[![Paper]](https://ieeexplore.ieee.org/abstract/document/10794598)
-[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/CQU-ADHRI-Lab/MI-DETR)
-[![License](https://img.shields.io/badge/Code%20License-Apache2.0-yellow)](https://github.com/CQU-ADHRI-Lab/MI-DETR/blob/main/LICENSE)
-
-</div>
-
-<div align=center>
-<img src="figures/results.gif" width="960px">
-</div>
-
-
-
 # MI-DETR
 This is the official implementation of the paper "MI-DETR: An Object Detection Model with Multi-time Inquiries Mechanism".
 
