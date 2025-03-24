@@ -1,9 +1,9 @@
-<h2 align="center"> <a href="[https://ieeexplore.ieee.org/abstract/document/10794598]">HEOI: Human attention prediction in natural daily life with fine-grained human-environment-object interaction model</a></h2>
+<h2 align="center"> <a href="[https://ieeexplore.ieee.org/abstract/document/10794598]">HEOI: Human Attention Prediction in Natural Daily Life with Fine-Grained Human-Environment-Object Interaction Model</a></h2>
 <h4 align="center" color="A0A0A0"> Zhixiong Nan, Leiyu Jia, Bin Xiao </h4>
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h5>
 
-# MI-DETR
-This is the official implementation of the paper "MI-DETR: An Object Detection Model with Multi-time Inquiries Mechanism".
+# HEOI
+This is the official implementation of the paper "<a href="[https://ieeexplore.ieee.org/abstract/document/10794598]">HEOI: Human Attention Prediction in Natural Daily Life with Fine-Grained Human-Environment-Object Interaction Model".
 
 <div align="center">
   <img src="figures/framework.png"/>
