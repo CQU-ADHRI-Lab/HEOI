@@ -10,15 +10,15 @@
 This is the official implementation of the paper "[HEOI: Human Attention Preiction in Natural Daily Life with Fine-Grained Human-Environment-Object Interaction Model](https://ieeexplore.ieee.org/abstract/document/10794598)".
 
 <div align="center">
-  <img src="figures/framework.png"/>
+  <img src="figures/method.png"/>
 </div><br/>
 
-Based on analyzing the character of cascaded decoder architecture commonly adopted in existing DETR-like models, this paper proposes a new decoder architecture. _The cascaded decoder architecture constrains object queries to update in the cascaded direction, only enabling object queries to learn relatively-limited information from image features._ However, the challenges for object detection in natural scenes (e.g., extremely-small, heavily-occluded, and confusingly mixed with the background) require an object detection model to fully utilize image features, which motivates us to propose a new decoder architecture with the parallel **Multi-time Inquiries (MI)** mechanism. _**MI** enables object queries to learn more comprehensive information, and our **MI** based model, **MI-DETR**, outperforms all existing DETR-like models on COCO benchmark under different backbones and training epochs_,  achieving **+2.3** AP and **+0.6** AP improvements compared to the most representative model DINO and SOTA model Relation-DETR under ResNet-50 backbone.
+This paper handles the problem of human attention prediction in natural daily life from the third-person view. Due to the significance of this topic in various applications, researchers in the computer vision community have proposed many excellent models in the past few decades, and many models have begun to focus on natural daily life scenarios in recent years. However, existing mainstream models usually ignore a basic fact that human attention is a typical interdisciplinary concept. Specifically, the mainstream definition is direction-level or pixel-level, while many interdisciplinary studies argue the object-level definition. Additionally, the mainstream model structure converges to the dual-pathway architecture or its variants, while the majority of interdisciplinary studies claim attention is involved in the human-environment interaction procedure. Grounded on solid theories and studies in interdisciplinary fields including computer vision, cognition, neuroscience, psychology, and philosophy, this paper proposes a fine-grained Human-Environment-Object Interaction **HEOI** model, which for the first time integrates multi-granularity human cues to predict human attention. Our model is explainable and lightweight, and validated to be effective by a wide range of comparison, ablation, and visualization experiments on two public datasets.
 
 ## Update
-[2025/3] Code for [MI-DETR](https://github.com/CQU-ADHRI-Lab/MI-DETR) is available here!
+[2025/3] Code for [HEOI](https://github.com/CQU-ADHRI-Lab/HEOI) is available here!
 
-[2025/2] MI-DETR has been accepted at CVPR 2024 as a poster!
+[2024/11] HEOI has been accepted at TIP as a regular paper!
 
 ## Installation
 
