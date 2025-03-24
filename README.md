@@ -22,28 +22,20 @@ This paper handles the problem of human attention prediction in natural daily li
 
 ## Installation
 
-We tested our code with `Python=3.8.39, PyTorch=1.12.0, CUDA=11.3`. Please install PyTorch first according to [official instructions](https://pytorch.org/get-started/previous-versions/). Our code is based on [detrex](https://github.com/IDEA-Research/detrex/tree/main). Please refer to the [installation](https://detrex.readthedocs.io/en/latest/tutorials/Installation.html) of detrex.
+We tested our code with `Python=3.9.19, PyTorch=1.13.0, CUDA=11.4`. Please install PyTorch first according to [official instructions](https://pytorch.org/get-started/previous-versions/).
 
 Example conda environment setup：
 
 ```bash
 # Create a new virtual environment
-conda create -n midetr python=3.8 -y
-conda activate midetr
+conda create -n heoi python=3.9 -y
+conda activate heoi
 
 # Install PyTorch
-pip install torch==1.12.0+cu113 torchvision==0.13.0+cu113 torchaudio==0.12.0 --extra-index-url https://download.pytorch.org/whl/cu113
-
-# initialize the detectron2 submodule
-git init
-git submodule init
-git submodule update
-
-# Install detectron2
-python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
+pip install torch==1.13.0+cu114 torchvision==0.14.0+cu114 --extra-index-url https://download.pytorch.org/whl/cu113
 
 # Under your working directory
-git clone https://github.com/CQU-ADHRI-Lab/MI-DETR.git
+git clone https://github.com/CQU-ADHRI-Lab/HEOI.git
 cd MI-DETR/
 pip install -r requirements.txt
 
