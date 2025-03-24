@@ -106,15 +106,15 @@ python tools/train_net.py --config-file projects/midetr/configs/midetr-resnet/mi
 ```
 
 
-## <a name="CitingMIDETR"></a>Citing MI-DETR
+## <a name="CitingMIDETR"></a>Citing HEOI
 
 If you find our work helpful for your research, please consider citing the following BibTeX entry.
 
 ```BibTeX
-@inproceedings{nan2024mi,
-  title={MI-DETR: An Object Detection Model with Multi-time Inquiries Mechanism}, 
-  author={Zhixiong Nan and Xianghong Li and Jifeng Dai and Tao Xiang},
-  booktitle={Proceedings of  the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  year={2025}
+@article{nan2024heoi,
+  title={HEOI: Human Attention Prediction in Natural Daily Life With Fine-Grained Human-Environment-Object Interaction Model},
+  author={Nan, Zhixiong and Jia, Leiyu and Xiao, Bin},
+  journal={IEEE Transactions on Image Processing},
+  year={2024}
 }
 ```
