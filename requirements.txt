@@ -1,0 +1,4 @@
+opencv-python == 4.5.6.64
+matplotlib == 3.7.1
+tensorboardx == 2.2
+numpy == 1.26.4
