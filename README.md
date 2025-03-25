@@ -42,8 +42,8 @@ pip install -r requirements.txt
 
 ## Run
 ### Dataset
-We provide attention object annotations for "[CAD-120](https://drive.google.com/drive/folders/1_ExuT3rxAk6fC_aY-uM_L7eHMqd3__N5?
-usp=sharing)" dataset.
+We provide attention object annotations for [CAD-120](https://drive.google.com/drive/folders/1_ExuT3rxAk6fC_aY-uM_L7eHMqd3__N5?
+usp=sharing) dataset.
 
 ### Training
 
