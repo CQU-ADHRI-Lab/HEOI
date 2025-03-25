@@ -14,7 +14,6 @@ import matplotlib.pyplot as plt
 from statistics import mean
 import random
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 class Test:
     def __init__(self):
         self._opt = TOptions().parse()
