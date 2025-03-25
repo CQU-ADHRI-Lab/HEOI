@@ -25,7 +25,7 @@ class BaseOptions(object):
                                    default='',
                                    help='models are saved here')
           self._parser.add_argument('--name', type=str,
-                                   default='CAD_DenseFusion_B_64_LR0001',
+                                   default='CAD_DenseFusion_V1_B_200_LR0001',
                                    help='name of the experiment. It decides '
                                         'where to store samples and models')
 
