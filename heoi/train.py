@@ -11,9 +11,6 @@ from model.factory_models import ModelsFactory
 from utils.tb_visualizer import TBVisualizer
 from torch.optim import lr_scheduler
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '0'
-ids = [0]
-
 class Train:
     def __init__(self):
         self._opt = TrainOptions().parse()
