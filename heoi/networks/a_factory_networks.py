@@ -4,7 +4,7 @@ class NetworksFactory:
 
     @staticmethod
     def get_by_name(network_name, *args, **kwargs):
-        if network_name == 'Dense_V1':
+        if network_name == 'Dense_fusion_V1':
             from networks.network_DenseInter_pathfusion_v1 import AttentionPrediction
             network = AttentionPrediction(*args, **kwargs)
         else:
