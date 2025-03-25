@@ -19,7 +19,6 @@ class CustomModel(BaseModel):
 
         # create networks(encoder and decoder)
         self._init_create_networks()
-        self._temporal_state = opt.temporal_state
 
         # init optimizer
         if self._is_train:
