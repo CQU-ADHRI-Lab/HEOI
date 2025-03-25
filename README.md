@@ -61,6 +61,7 @@ CUDA_VISIBLE_DEVICES=0,1 python test_CAD_netpart.py --name CAD_DenseFusion_V1_B_
 ```
 
 
+
 ## <a name="CitingMIDETR"></a>Citing HEOI
 
 If you find our work helpful for your research, please consider citing the following BibTeX entry.
