@@ -32,7 +32,7 @@ conda create -n heoi python=3.9 -y
 conda activate heoi
 
 # Install PyTorch
-pip install torch==1.13.0+cu114 torchvision==0.14.0+cu114 --extra-index-url https://download.pytorch.org/whl/cu113
+pip install torch==1.13.0+cu117 torchvision==0.14.0+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
 
 # Under your working directory
 git clone https://github.com/CQU-ADHRI-Lab/HEOI.git
@@ -47,14 +47,14 @@ pip install -r requirements.txt
 Train HEOI with 2 GPUs:
 
 ```sh
-CUDA_VISIBLE_DEVICES=0,1 python train.py --name CAD_DenseFusion_V2_1_3_8_B_200_LR0001 --model_name Dense_V1 --network_name Dense_fusion_2_1_3_8 --batch_size 200 --lr_G 0.0001 --nepochs_decay 5 --nepochs_no_decay 5
+CUDA_VISIBLE_DEVICES=0,1 python train.py --name CAD_DenseFusion_V1_B_200_LR0001 --model_name Dense_V1 --network_name Dense_fusion_V1 --batch_size 200 --lr_G 0.0001 --nepochs_decay 5 --nepochs_no_decay 5
 ```
 
 ### Evaluation
 
 You can download our pretrained models and evaluate them with the following commands. 
 ```sh
-CUDA_VISIBLE_DEVICES=0,1 python test_CAD_netpart.py --name CAD_DenseFusion_V2_1_3_1_B_200_LR0001 --model_name Dense_V1 --network_name Dense_fusion_2_1_3_1 --batch_size 200 --lr_G 0.0001 --nepochs_decay 5 --nepochs_no_decay 5
+CUDA_VISIBLE_DEVICES=0,1 python test_CAD_netpart.py --name CAD_DenseFusion_V1_B_200_LR0001 --model_name Dense_V1 --network_name Dense_fusion_V1 --batch_size 200 --lr_G 0.0001 --nepochs_decay 5 --nepochs_no_decay 5
 ```
 
 
