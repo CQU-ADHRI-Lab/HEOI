@@ -59,7 +59,8 @@ You can download our pretrained models and evaluate them with the following comm
 ```sh
 CUDA_VISIBLE_DEVICES=0,1 python test_CAD_netpart.py --name CAD_DenseFusion_V1_B_200_LR0001 --model_name Dense_V1 --network_name Dense_fusion_V1 --batch_size 200 --lr_G 0.0001 --nepochs_decay 5 --nepochs_no_decay 5
 ```
-
+### Checkpoints
+We provide checkpoints for <a href="[https://drive.google.com/drive/folders/1_ExuT3rxAk6fC_aY-uM_L7eHMqd3__N5?usp=sharing](https://drive.google.com/file/d/1so-3t07-v0rn1zQ5S2wOrD2K30lbd6IS/view?usp=sharing)" target="_blank">CAD-120</a> dataset.
 
 
 ## <a name="CitingMIDETR"></a>Citing HEOI
