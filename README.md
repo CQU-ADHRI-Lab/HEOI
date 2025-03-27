@@ -73,7 +73,8 @@ If you find our work helpful for your research, please consider citing the follo
   author={Nan, Zhixiong and Jia, Leiyu and Xiao, Bin},
   journal={IEEE Transactions on Image Processing},
   year={2024}
-}```
+}
+```
 ```BibTex
 @article{nan2023third,
   title={Third-person view attention prediction in natural scenarios with weak information dependency and human-scene interaction mechanism},
@@ -81,4 +82,5 @@ If you find our work helpful for your research, please consider citing the follo
   journal={IEEE Transactions on Circuits and Systems for Video Technology},
   year={2023},
   publisher={IEEE}
-}```
+}
+```
