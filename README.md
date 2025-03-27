@@ -84,3 +84,25 @@ If you find our work helpful for your research, please consider citing the follo
   publisher={IEEE}
 }
 ```
+```BibTex
+@article{nan2021predicting,
+  title={Predicting task-driven attention via integrating bottom-up stimulus and top-down guidance},
+  author={Nan, Zhixiong and Jiang, Jingjing and Gao, Xiaofeng and Zhou, Sanping and Zuo, Weiliang and Wei, Ping and Zheng, Nanning},
+  journal={IEEE Transactions on Image Processing},
+  volume={30},
+  pages={8293--8305},
+  year={2021},
+  publisher={IEEE}
+}
+```
+```BibTex
+@article{nan2020learning,
+  title={Learning to infer human attention in daily activities},
+  author={Nan, Zhixiong and Shu, Tianmin and Gong, Ran and Wang, Shu and Wei, Ping and Zhu, Song-Chun and Zheng, Nanning},
+  journal={Pattern Recognition},
+  volume={103},
+  pages={107314},
+  year={2020},
+  publisher={Elsevier}
+}
+```
